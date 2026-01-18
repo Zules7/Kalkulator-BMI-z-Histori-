@@ -1,1 +1,22 @@
+name: CI – Build
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up environment
+        run: echo "Environment ready"
+
+      - name: Build project
+        run: echo "Build successful"
 

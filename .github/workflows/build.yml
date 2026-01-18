@@ -17,6 +17,8 @@ jobs:
       - name: Set up environment
         run: echo "Environment ready"
 
+      - name: List repository files
+        run: ls -la
+
       - name: Build project
         run: echo "Build successful"
-
